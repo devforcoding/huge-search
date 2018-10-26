@@ -1,3 +1,3 @@
-Simple Morphing Search
+Morphing Search
 
 https://keybro.github.io/huge-search/
