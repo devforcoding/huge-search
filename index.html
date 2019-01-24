@@ -7,92 +7,143 @@
     <title>Huge Search</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!--- Тут будет форма поиска --->
-<div class="morph-search-content">
-    <div class="dummy-column">
-        <h2>People</h2>
-        <a class="dummy-media-object" href="https://www.sarasoueidan.com/">
-            <img class="round" src="img/avatars/SaraSoueidan.jpeg" alt="Sara Soueidan">
-            <h4>Sara Soueidan</h4>
-        </a>
-        <a class="dummy-media-object" href="https://rachsmith.com/">
-            <img class="round" src="img/avatars/RachelSmith.png" alt="Rachel Smith">
-            <h4>Rachel Smith</h4>
-        </a>
-        <a class="dummy-media-object" href="http://www.peterfinlan.com/">
-            <img class="round" src="img/avatars/PeterFinlan.jpeg" alt="Peter Finlan">
-            <h4>Peter Finlan</h4>
-        </a>
-        <a class="dummy-media-object" href="http://patrick-cox.com/">
-            <img class="round" src="img/avatars/PatrickCox.png" alt="Patrick Cox">
-            <h4>Patrick Cox</h4>
-        </a>
-        <a class="dummy-media-object" href="http://tholman.com/">
-            <img class="round" src="img/avatars/TimHolman.jpeg" alt="Tim Holman">
-            <h4>Tim Holman</h4>
-        </a>
-        <a class="dummy-media-object" href="https://pencilandfox.getforge.io/">
-            <img class="round" src="img/avatars/ShaunDona.jpeg" alt="Shaun Dona">
-            <h4>Shaun Dona</h4>
-        </a>
-    </div>
-    <div class="dummy-column">
-        <h2>Popular</h2>
-        <a class="dummy-media-object" class="dummy-media-object" href="https://www.sarasoueidan.com/">
-            <img src="img/thumbs/PagePreloadingEffect.png" alt="Page Preloading Effect">
-            <h4>Page Preloading Effect</h4>
-        </a>
-        <a class="dummy-media-object" href="https://rachsmith.com/">
-            <img src="img/thumbs/ArrowNavigationStyles.png" alt="Arrow Navigation Styles">
-            <h4>Arrow Navigation Styles</h4>
-        </a>
-        <a class="dummy-media-object" href="http://www.peterfinlan.com/">
-            <img src="img/thumbs/HoverEffectsIdeasNew.png" alt="Ideas for Subtle Hover Effects">
-            <h4>Ideas for Subtle Hover Effects</h4>
-        </a>
-        <a class="dummy-media-object" href="http://patrick-cox.com/">
-            <img src="img/thumbs/FreebieHalcyonDays.png" alt="Halcyon Days Template">
-            <h4>Halcyon Days Template</h4>
-        </a>
-        <a class="dummy-media-object" href="http://tholman.com/">
-            <img src="img/thumbs/ArticleIntroEffects.png" alt="Inspiration for Article Intro Effects">
-            <h4>Inspiration for Article Intro Effects</h4>
-        </a>
-        <a class="dummy-media-object" href="https://pencilandfox.getforge.io/">
-            <img src="img/thumbs/DraggableDualViewSlideshow.png" alt="Draggable Dual-View Slideshow">
-            <h4>Draggable Dual-View Slideshow</h4>
-        </a>
-    </div>
-    <div class="dummy-column">
-        <h2>Recent</h2>
-        <a class="dummy-media-object" class="dummy-media-object" href="https://www.sarasoueidan.com/">
-            <img src="img/thumbs/TooltipStylesInspiration.png" alt="Tooltip Styles Inspiration">
-            <h4>Tooltip Styles Inspiration</h4>
-        </a>
-        <a class="dummy-media-object" href="https://rachsmith.com/">
-            <img src="img/thumbs/AnimatedHeaderBackgrounds.png" alt="Animated Background Headers">
-            <h4>Animated Background Headers</h4>
-        </a>
-        <a class="dummy-media-object" href="http://www.peterfinlan.com/">
-            <img src="img/thumbs/OffCanvas.png" alt="Off-Canvas Menu Effects">
-            <h4>Off-Canvas Menu Effects</h4>
-        </a>
-        <a class="dummy-media-object" href="http://patrick-cox.com/">
-            <img src="img/thumbs/TabStyles.png" alt="Tab Styles Inspiration">
-            <h4>Tab Styles Inspiration</h4>
-        </a>
-        <a class="dummy-media-object" href="http://tholman.com/">
-            <img src="img/thumbs/ResponsiveSVGs.png" alt="Make SVGs Responsive with CSS">
-            <h4>Make SVGs Responsive with CSS</h4>
-        </a>
-        <a class="dummy-media-object" href="https://pencilandfox.getforge.io/">
-            <img src="img/thumbs/NotificationStyles.png" alt="Notificatin Styles Inspiration">
-            <h4>Notificatin Styles Inspiration</h4>
-        </a>
-    </div>
-</div>
+<header class="search-container">
+    <form action="" class="search-box">
+        <input type="text" id="search" name="needle" class="search-box__input" placeholder="Search...">
+        <button type="submit"><img src="img/favicon.png" alt="Search"></button>
+    </form>
+</header>
+<main class="content">
+    <section class="people">
+        <h3>People</h3>
+        <ul>
+            <li>
+                <a data-fancybox data-type="iframe" data-src="https://www.sarasoueidan.com/"  href="javascript:;">
+                    <img src="img/avatars/SaraSoueidan.jpeg" class="Sara Soueidan">
+                    <span>Sara Soueidan</span>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox data-type="iframe" data-src="https://rachsmith.com/" href="javascript:;">
+                    <img src="img/avatars/RachelSmith.png" class="Rachel Smith">
+                    <span>Rachel Smith</span>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox data-type="iframe" data-src="http://www.peterfinlan.com/" href="javascript:;">
+                    <img src="img/avatars/PeterFinlan.jpeg" class="Peter Finlan">
+                    <span>Peter Finlan</span>
+                </a>
+            </li>
+            <li>
+                <a data-fancybox data-type="iframe" data-src="http://patrick-cox.com/" href="javascript:;">
+                    <img src="img/avatars/PatrickCox.png" class="Patrick Cox">
+                    <span>Patrick Cox</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/avatars/TimHolman.jpeg" class="Tim Holman">
+                    <span>Tim Holman</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pencilandfox.getforge.io/">
+                    <img src="img/avatars/ShaunDona.jpeg" class="Shaun Dona">
+                    <span>Shaun Dona</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="popular">
+        <h3>Popular</h3>
+        <ul>
+            <li>
+                <a href="https://www.sarasoueidan.com/">
+                    <img src="img/thumbs/PagePreloadingEffect.png" alt="PagePreloadingEffect">
+                    <span>Page Preloading Effect</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="img/thumbs/ArrowNavigationStyles.png" alt="ArrowNavigationStyles">
+                    <span>Arrow Navigation Styles</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rachsmith.com/">
+                    <img src="img/thumbs/HoverEffectsIdeasNew.png">
+                    <span>Ideas for Subtle Hover Effects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tympanus.net/codrops/2014/07/14/freebie-halcyon-days-one-page-website-template/">
+                    <img src="img/thumbs/FreebieHalcyonDays.png">
+                    <span>Halcyon Days Template</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/">
+                    <img src="img/thumbs/ArticleIntroEffects.png">
+                    <span>Inspiration for Article Intro Effects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pencilandfox.getforge.io/">
+                    <img src="img/thumbs/DraggableDualViewSlideshow.png">
+                    <span>Draggable Dual-View Slideshow</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="recent">
+        <h3>Recent</h3>
+        <ul>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/thumbs/TooltipStylesInspiration.png">
+                    <span>Tooltip Styles Inspiration</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/thumbs/AnimatedHeaderBackgrounds.png">
+                    <span>Animated Backgba-circle Headers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/thumbs/OffCanvas.png">
+                    <span>Off-Canvas Menu Effects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/thumbs/TabStyles.png">
+                    <span>Tab Styles Inspiration</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/thumbs/ResponsiveSVGs.png">
+                    <span>Make SVGs Responsive with CSS</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://tholman.com/">
+                    <img src="img/thumbs/NotificationStyles.png">
+                    <span>Notification Styles Inspiration</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
